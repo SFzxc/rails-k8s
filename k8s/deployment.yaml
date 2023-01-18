@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rails-k8s
+spec:
+  selector:
+    matchLabels:
+      app: rails-k8s
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: rails-k8s
+    spec:
+      containers:
+        - name: rails-k8s
+          image: tobihoang/rails-k8s:0.1.1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
