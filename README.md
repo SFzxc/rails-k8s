@@ -1,24 +1,15 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Deploy a Rails App With Docker + Kubernetes
 
-Things you may want to cover:
+### Setup
 
-* Ruby version
+```
+kubectl create -f k8s
+```
 
-* System dependencies
+### References:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- https://www.docker.com/products/docker-desktop/
+- https://hub.docker.com/
+- https://cloud.google.com/sdk/docs/install
+- https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
